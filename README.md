@@ -8,6 +8,8 @@ This project focuses on analyzing a store sales dataset to extract business insi
 The project includes data preprocessing, exploratory data analysis, forecasting using machine learning techniques, and building an interactive dashboard using Tableau.
 
 ---
+## Team Name: Team 4
+---
 
 ## Team Members
 1. Abdelrhman Mohammed Mahmoud (Leader) 
