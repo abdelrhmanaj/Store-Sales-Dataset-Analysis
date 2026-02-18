@@ -12,7 +12,9 @@ The project includes data preprocessing, exploratory data analysis, forecasting 
 ## Team Members
 1. Abdelrhman Mohammed Mahmoud (Leader) 
 2. Mahmoud Soudy Youssef
-3. Member 3  
+3. Abdelhalim Abdelmageed Shahat
+4. Abdallah Amgad Hassan
+5. Rana Mohamed Mostafa
 
 ---
 
