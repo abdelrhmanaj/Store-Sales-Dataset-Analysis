@@ -123,13 +123,13 @@ Mr .Abdelrahman Ashour
 
 ### Week 4 — Dashboard & Final Presentation
 **Tasks**
-- Build Tableau Dashboard  
+- Build Bower BI Dashboard  
 - Prepare final report and presentation  
 
 **Tools**
 - SQL  
 - Python  
-- Tableau  
+- Power BI 
 
 **Deliverables**
 - Interactive dashboard  
@@ -149,8 +149,6 @@ https://drive.google.com/file/d/1gO-Uo8EuXqZNi5606-yXAtbUZ0_8IseW/view?usp=drive
 - Python  
 - Pandas
 - Power BI  
-- لآخصثق 
-
 ---
 
 ## Expected Outcomes
