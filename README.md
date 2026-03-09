@@ -147,10 +147,9 @@ https://drive.google.com/file/d/1gO-Uo8EuXqZNi5606-yXAtbUZ0_8IseW/view?usp=drive
 ## Tools & Technologies
 - SQL  
 - Python  
-- Pandas  
-- Matplotlib  
-- Scikit-learn  
-- Tableau  
+- Pandas
+- Power BI  
+- لآخصثق 
 
 ---
 
