@@ -1,160 +1,156 @@
-# Store Sales Dataset Analysis
+# 📊 Store Sales Data Analysis & Dashboard Project
+
+## 📌 Project Overview
+This project focuses on analyzing a **store sales dataset** to extract meaningful business insights and support data-driven decision-making.
+
+The project covers the full data analysis pipeline:
+- Data cleaning and preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Data modeling  
+- KPI development  
+- Interactive dashboard creation using Power BI  
 
 ---
 
-## Project Idea
-This project focuses on analyzing a store sales dataset to extract business insights, answer analytical and forecasting questions, and build a visualization dashboard to support decision-making.
+## 👥 Team Information
+**Team Name:** Team 4  
 
-The project includes data preprocessing, exploratory data analysis, forecasting using machine learning techniques, and building an interactive dashboard using Tableau.
-
----
-## Team Name: Team 4
----
-
-## Team Members
-1. Abdelrhman Mohammed Mahmoud (Leader) 
-2. Mahmoud Soudy Youssef
-3. Abdelhalim Abdelmageed Shahat
-4. Abdallah Amgad Hassan
-5. Rana Mohamed Mostafa
+### Members:
+- Abdelrhman Mohammed Mahmoud (Team Leader)  
+- Mahmoud Soudy Youssef  
+- Abdelhalim Abdelmageed Shahat  
+- Abdallah Amgad Hassan  
+- Rana Mohamed Mostafa  
 
 ---
 
-## Project Plan
+## 🎯 Project Objectives
+- Clean and preprocess raw sales data  
+- Build a structured data model (Fact & Dimension tables)  
+- Define and answer key business questions  
+- Develop KPIs and performance metrics  
+- Design an interactive dashboard for stakeholders  
+- Generate actionable insights for decision-making  
 
-### 1. Research & Analysis
-- Data preprocessing and cleaning  
+---
+
+## 🧱 Project Phases
+
+### 🔹 1. Data Preparation & Modeling
+- Data cleaning using Python (Pandas)  
+- Handling missing values and inconsistencies  
+- Feature engineering  
+- Building a **star schema model** (Fact + Dimensions)  
+
+---
+
+### 🔹 2. Exploratory Data Analysis (EDA)
+- Analyze sales trends over time  
+- Identify top-performing products and categories  
+- Evaluate regional and customer segment performance  
+- Detect outliers and anomalies  
+
+---
+
+### 🔹 3. KPI & Metrics Development
+Key metrics implemented:
+- **Total Sales**  
+- **Orders Count**  
+- **Average Order Value (AOV)**  
+- **Sales Growth (MoM & YoY)**  
+- **Category Contribution %**  
+- **Top Products Ranking**  
+
+---
+
+### 🔹 4. Dashboard Development
+- Built using **Power BI**  
+- Interactive filters (Year, Region, Segment, Category)  
+
+**Visualizations include:**
+- 📈 Sales trends over time  
+- 📊 Sales by category and sub-category  
+- 🌍 Regional performance (map)  
+- 👥 Customer segment distribution  
+- 🏆 Top products analysis  
+
+---
+
+### 🔹 5. Finalization & Presentation
+- Validate results and insights  
+- Optimize dashboard performance  
+- Prepare final report and presentation  
+- Demonstrate dashboard and findings  
+
+---
+
+## 🛠️ Tools & Technologies
+- **Python** (Pandas, Matplotlib)  
+- **SQL**  
+- **Power BI**  
+
+---
+
+## 📅 Project Timeline
+
+### 🗓 Week 1 — Data Preparation
+- Data cleaning  
 - Build data model  
-- Identify analysis questions  
-- Target Audience: Business decision makers, sales managers  
 
-### 2. Visual Identity
-- Logo design for presentation and dashboard branding  
-
-### 3. Main Designs
-- Dashboard Design  
-- Visualization Charts  
-- Presentation Slides  
-
-### 4. Complementary Products
-- Data preprocessing notebook  
-- Forecasting model notebook  
-
-### 5. Review & Finalization
-- Validate results  
-- Optimize dashboard  
-- Final documentation  
-
-### 6. Final Presentation
-- Present insights  
-- Explain forecasting results  
-- Demonstrate dashboard  
-
----
-
-## Roles & Responsibilities
-- Data Cleaning & Preprocessing — SQL, Python (Pandas)  
-- Data Analysis & Visualization — Python (Matplotlib), Tableau  
-- Forecasting Models — Python (Scikit-learn)  
-- Dashboard Development — Tableau  
-- Documentation & Presentation — Team Collaboration  
-
----
-
-## KPIs (Key Performance Indicators)
-- Data cleaning accuracy  
-- Forecasting model accuracy  
-- Dashboard usability  
-- Query response time  
-- Insight usefulness for decision making  
-
----
-
-## Instructor
-Mr .Abdelrahman Ashour
-
----
-
-## Project Timeline (4 Weeks)
-
-### Week 1 — Data Model & Preprocessing
-**Tasks**
-- Build data model  
-- Clean and preprocess dataset  
-
-**Tools**
-- SQL  
-- Python (Pandas, Matplotlib)  
-
-**Deliverables**
+**Deliverables:**
 - Cleaned dataset  
-- Data preprocessing notebook  
+- Preprocessing notebook  
 
 ---
 
-### Week 2 — Analysis Questions Phase
-**Tasks**
-- Define business analysis questions  
-- Analyze product categories and regions impact on sales  
+### 🗓 Week 2 — Analysis
+- Define business questions  
+- Perform EDA  
 
-**Tools**
-- SQL  
-- Python (Pandas, Matplotlib)  
-
-**Deliverables**
-- Set of analysis questions  
+**Deliverables:**
+- Analysis insights  
 - Initial visualizations  
 
 ---
 
-### Week 3 — Forecasting Phase
-**Tasks**
-- Define forecasting questions  
-- Build forecasting models using trends  
+### 🗓 Week 3 — Advanced Analysis
+- Develop KPIs and measures  
+- Analyze trends and performance  
 
-**Tools**
-- Python (Scikit-learn, Pandas, Matplotlib)  
-
-**Deliverables**
-- Forecasting visualizations  
-- Model evaluation results  
+**Deliverables:**
+- KPI calculations  
+- Advanced insights  
 
 ---
 
-### Week 4 — Dashboard & Final Presentation
-**Tasks**
-- Build Bower BI Dashboard  
-- Prepare final report and presentation  
+### 🗓 Week 4 — Dashboard & Presentation
+- Build Power BI dashboard  
+- Finalize report and presentation  
 
-**Tools**
-- SQL  
-- Python  
-- Power BI 
-
-**Deliverables**
+**Deliverables:**
 - Interactive dashboard  
 - Final report  
-- Final presentation  
+- Presentation  
 
 ---
 
-## Project Files
-You can find the full project files here:  
-https://drive.google.com/file/d/1gO-Uo8EuXqZNi5606-yXAtbUZ0_8IseW/view?usp=drive_link
+## 📊 Key Insights
+- Sales exhibit clear seasonal trends  
+- A small number of products generate a large share of revenue  
+- Significant variation exists across regions  
+- Customer segments contribute differently to total sales  
 
 ---
 
-## Tools & Technologies
-- SQL  
-- Python  
-- Pandas
-- Power BI  
----
-
-## Expected Outcomes
+## 🎯 Expected Outcomes
 - Clean and structured dataset  
-- Business insights from sales data  
-- Forecasting models for future sales trends  
-- Interactive dashboard for decision makers  
+- Meaningful business insights  
+- Professional Power BI dashboard  
+- Data-driven recommendations  
 
 ---
+
+## 👨‍🏫 Instructor
+**Mr. Abdelrahman Ashour**
+
+
