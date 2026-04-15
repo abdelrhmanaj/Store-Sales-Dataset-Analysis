@@ -20,6 +20,47 @@ The project includes data preprocessing, exploratory data analysis, forecasting 
 
 ---
 
+## Data Cleaning Progress
+
+### Datasets Overview
+The project includes **13 datasets** across multiple CSV files covering various aspects of store sales operations:
+
+| Dataset | Records | Key Fields | Status |
+|---------|---------|-----------|--------|
+| CAMPAIGN_TOUCH | Customer campaign interactions | touch_id, customer_id, campaign_name, outcome | ✅ Cleaned |
+| CATEGORY | Product categories | category_id, category_name | ✅ Cleaned |
+| CHANNEL | Sales channels | channel_id, channel_name | ✅ Cleaned |
+| CUSTOMER | Customer information | customer_id, signup_date, city, state, segment, status | ✅ Cleaned |
+| EXTERNAL_FACTOR | Weather & economic factors | factor_id, store_id, rainfall, temperature, CPI | ✅ Cleaned |
+| MARKETING_CHANNEL | Marketing channels | channel_id, channel_name, channel_type, cost_tier | ✅ Cleaned |
+| ORDER | Order transactions | order_id, customer_id, order_date, total_amount | ✅ Cleaned |
+| ORDER_ITEM | Order line items | order_item_id, order_id, product_id, quantity, discount | ✅ Cleaned |
+| PRICE_CHANGE | Product pricing history | product_id, year, week, unit_price | ✅ Cleaned |
+| PRODUCT | Product information | product_id, product_name, category_id, price | ✅ Cleaned |
+| PROMOTION | Promotional campaigns | promo_id, promo_type, start_date, discount_value | ✅ Cleaned |
+| SESSION | Customer sessions | session_id, customer_id, session_date, items_viewed | ✅ Cleaned |
+| STORE | Store information | store_id, store_city, store_state, store_type | ✅ Cleaned |
+| SUPPORT_TICKET | Customer support tickets | ticket_id, customer_id, issue_type, status, resolution_time | ✅ Cleaned |
+
+### Team Member Assignments
+- **Rana Mohamed Mostafa** - PRICE_CHANGE, ORDER_ITEM
+- **Mahmoud Soudy Youssef** - CAMPAIGN_TOUCH, CATEGORY, CHANNEL
+- **Abdallah Amgad Hassan** - CUSTOMER, MARKETING_CHANNEL, EXTERNAL_FACTOR
+- **Abdelrhman Mohammed Mahmoud** - ORDER, PRODUCT, SESSION
+- **Abdelhalim Abdelmageed Shahat** - PROMOTION, STORE, SUPPORT_TICKET
+
+### Data Cleaning Notebooks
+All cleaning notebooks are located in `NoteBooks_For_Cleaning/`:
+- `Rana.ipynb` - Data cleaning for PRICE_CHANGE and ORDER_ITEM
+- `Soudy.ipynb` - Data cleaning for CAMPAIGN_TOUCH, CATEGORY, and CHANNEL
+- `Abdallah.ipynb` - Data cleaning for CUSTOMER, MARKETING_CHANNEL, and EXTERNAL_FACTOR
+- `Abdelrhmanaja.ipynb` - Data cleaning for ORDER, PRODUCT, and SESSION
+- `Abdelhalim.ipynb` - Data cleaning for PROMOTION, STORE, and SUPPORT_TICKET
+
+**Cleaned datasets are saved in:** `Cleaned_DataSet/` folder
+
+---
+
 ## Project Plan
 
 ### 1. Research & Analysis
@@ -135,12 +176,6 @@ Mr .Abdelrahman Ashour
 - Interactive dashboard  
 - Final report  
 - Final presentation  
-
----
-
-## Project Files
-You can find the full project files here:  
-https://drive.google.com/file/d/1gO-Uo8EuXqZNi5606-yXAtbUZ0_8IseW/view?usp=drive_link
 
 ---
 
