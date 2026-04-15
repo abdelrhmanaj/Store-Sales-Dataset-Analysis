@@ -34,7 +34,6 @@ The project covers the full data analysis pipeline:
 
 ---
 
-## 🧱 Project Phases
 
 ### 🔹 1. Data Preparation & Modeling
 - Data cleaning using Python (Pandas)  
@@ -134,15 +133,7 @@ Key metrics implemented:
 
 ---
 
-## 📊 Key Insights
-- Sales exhibit clear seasonal trends  
-- A small number of products generate a large share of revenue  
-- Significant variation exists across regions  
-- Customer segments contribute differently to total sales  
 
----
-
-## 🎯 Expected Outcomes
 - Clean and structured dataset  
 - Meaningful business insights  
 - Professional Power BI dashboard  
