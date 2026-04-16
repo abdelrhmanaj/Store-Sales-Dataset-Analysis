@@ -1,13 +1,3 @@
-channel_id,channel_name,channel_type,cost_tier
-MKT001,Email,Owned,Low
-MKT002,SMS,Owned,Low
-MKT003,Push,Owned,Low
-MKT004,WhatsApp,Owned,Low
-MKT005,Search Ads,Paid,High
-MKT006,Social Ads,Paid,High
-MKT007,Display Ads,Paid,Medium
-MKT008,Affiliate,Paid,Medium
-MKT009,Influencer,Paid,High
-MKT010,Marketplace Banner,Paid,Medium
-MKT011,TV Campaign,Offline,Very High
-MKT012,In-Store Promotion,Offline,Medium
+version https://git-lfs.github.com/spec/v1
+oid sha256:73f29121fda1a1b204627d2b9a0540f975682b2eb96e94cac543d635d40d0137
+size 412
