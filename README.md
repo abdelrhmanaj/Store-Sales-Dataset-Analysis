@@ -16,7 +16,7 @@ The project covers the full data analysis pipeline:
 **Team Name:** Team 4  
 
 ### Members:
-- Abdelrhman Mohammed Mahmoud (Team Leader)  
+- Abdelrhman Mohammed Mahmoud aja (Team Leader)  
 - Mahmoud Soudy Youssef  
 - Abdelhalim Abdelmageed Shahat  
 - Abdallah Amgad Hassan  
@@ -144,8 +144,5 @@ Key metrics implemented:
 ## 👨‍🏫 Instructor
 **Mr. Abdelrahman Ashour**
 
-
-
-.....
 
 
