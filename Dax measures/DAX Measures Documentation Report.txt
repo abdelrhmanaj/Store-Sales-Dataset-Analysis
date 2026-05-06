@@ -1,0 +1,67 @@
+1. Retail Sales Metrics
+This group handles the core revenue logic, utilizing dynamic pricing based on historical changes.
+
+Total Revenue
+
+Purpose: Calculates gross income by matching each product's quantity with its specific price for the given Year and Week.
+
+Logic: Uses SUMX to iterate through orders and LOOKUPVALUE to fetch the correct price from the PRICE_CHANGE table.
+
+Total Quantity
+
+Purpose: Summarizes the total number of units sold across all transactions.
+
+Avg Selling Price
+
+Purpose: Determines the actual average price per unit sold.
+
+Logic: DIVIDE([Total Revenue], [Total Quantity], 0).
+
+2. Customer Insights
+Measures designed to analyze purchasing power and customer base growth.
+
+Total Customers
+
+Purpose: Counts unique customers who have placed at least one order.
+
+Revenue per Customer
+
+Purpose: Calculates the Average Order Value (AOV) per unique user.
+
+Logic: Divides Total Revenue by the count of unique Customer IDs.
+
+3. Marketing Performance
+Derived from the CAMPAIGN_TOUCH table, analyzing over 800,000 interactions.
+
+Total Marketing Touches
+
+Purpose: Counts the total number of marketing interactions recorded.
+
+Campaign Conversion Rate
+
+Purpose: Measures the effectiveness of campaigns in converting leads.
+
+Logic: Uses CALCULATE to count rows where Outcome = 1, divided by the total marketing touches.
+
+4. Customer Support Analysis
+Focuses on service quality using data from the SUPPORT_TICKET table.
+
+Avg Satisfaction Score (CSAT)
+
+Purpose: Measures the average customer satisfaction rating.
+
+Pending Tickets Count
+
+Purpose: Tracks unresolved issues (where status is not 'Resolved').
+
+5. Environmental & External Context
+Avg Temperature
+
+Purpose: Calculates the average temperature from the EXTERNAL_FACTOR table to study its correlation with sales trends.
+
+💡 Developer Notes
+Centralized Storage: All measures are stored in the _Key_Measures calculated table for easy access.
+
+Safe Division: The DIVIDE function is used globally to prevent "Division by Zero" errors.
+
+Data Formatting: Revenue is formatted as Currency, and Conversion Rate as Percentage for immediate use in visualizations.
