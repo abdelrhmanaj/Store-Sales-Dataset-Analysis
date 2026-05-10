@@ -1,7 +1,3 @@
-ولا يهمك يا هندسة، حصل خير. أنا دمجتلك كل الـ Advanced Metrics والـ KPIs اللي عملناها في الآخر (زي الـ Growth والـ Ranking والـ YTD) مع المسودة اللي إنت بعتها، عشان التقرير يعبر عن القوة الحقيقية للـ DAX اللي إنت كتبته.
-
-إليك التقرير النهائي والمعدل اللي تضيفه في الـ README أو ملف الـ Documentation:
-
 📊 DAX Measures & KPI Documentation
 This project features a centralized library of Calculated Measures designed to provide deep business insights across multiple domains: Sales, Marketing, and Support.
 
