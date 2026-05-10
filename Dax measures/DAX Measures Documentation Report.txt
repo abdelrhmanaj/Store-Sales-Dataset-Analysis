@@ -1,67 +1,94 @@
-1. Retail Sales Metrics
-This group handles the core revenue logic, utilizing dynamic pricing based on historical changes.
+ولا يهمك يا هندسة، حصل خير. أنا دمجتلك كل الـ Advanced Metrics والـ KPIs اللي عملناها في الآخر (زي الـ Growth والـ Ranking والـ YTD) مع المسودة اللي إنت بعتها، عشان التقرير يعبر عن القوة الحقيقية للـ DAX اللي إنت كتبته.
+
+إليك التقرير النهائي والمعدل اللي تضيفه في الـ README أو ملف الـ Documentation:
+
+📊 DAX Measures & KPI Documentation
+This project features a centralized library of Calculated Measures designed to provide deep business insights across multiple domains: Sales, Marketing, and Support.
+
+1. Retail Sales & Profitability
+This group handles the core revenue logic, utilizing dynamic pricing to ensure accuracy across millions of records.
 
 Total Revenue
 
-Purpose: Calculates gross income by matching each product's quantity with its specific price for the given Year and Week.
+Purpose: Calculates gross income by matching quantities with time-specific prices.
 
-Logic: Uses SUMX to iterate through orders and LOOKUPVALUE to fetch the correct price from the PRICE_CHANGE table.
+Logic: Uses SUMX and LOOKUPVALUE to fetch the correct price from the PRICE_CHANGE table based on the Year/Week context.
 
 Total Quantity
 
-Purpose: Summarizes the total number of units sold across all transactions.
+Purpose: Summarizes the total number of units sold.
 
-Avg Selling Price
+Avg Selling Price (AOV)
 
 Purpose: Determines the actual average price per unit sold.
 
 Logic: DIVIDE([Total Revenue], [Total Quantity], 0).
 
-2. Customer Insights
-Measures designed to analyze purchasing power and customer base growth.
+Revenue YTD (Year-to-Date)
 
-Total Customers
+Purpose: Tracks cumulative sales performance from the start of the current year.
 
-Purpose: Counts unique customers who have placed at least one order.
+Logic: TOTALYTD([Total Revenue], 'ORDER'[order_date]).
 
-Revenue per Customer
+2. Growth & Time Intelligence
+Essential for management to track performance trends over time.
 
-Purpose: Calculates the Average Order Value (AOV) per unique user.
+Revenue LM (Last Month)
 
-Logic: Divides Total Revenue by the count of unique Customer IDs.
+Purpose: Acts as a baseline for monthly performance comparisons.
 
-3. Marketing Performance
-Derived from the CAMPAIGN_TOUCH table, analyzing over 800,000 interactions.
+Sales Growth MoM%
 
-Total Marketing Touches
+Purpose: Measures the percentage increase or decrease in sales compared to the previous month.
 
-Purpose: Counts the total number of marketing interactions recorded.
+Logic: DIVIDE([Total Revenue] - [Revenue LM], [Revenue LM], 0).
+
+YoY Growth %
+
+Purpose: Compares current performance against the same period last year to account for seasonality.
+
+3. Customer & Ranking Insights
+Measures designed to analyze purchasing power and product performance.
+
+Total Customers: Counts unique customers using DISTINCTCOUNT.
+
+Revenue per Customer: Calculates the average lifetime value per unique user.
+
+Product Sales Rank
+
+Purpose: Dynamically ranks products based on revenue.
+
+Logic: RANKX(ALL('PRODUCT'), [Total Revenue], , DESC).
+
+Category Contribution %
+
+Purpose: Shows how much each category represents of the total sales (Dynamic based on Slicers).
+
+4. Marketing Performance
+Analyzes over 800,000 interactions from the CAMPAIGN_TOUCH table.
+
+Total Marketing Touches: Total volume of marketing interactions.
 
 Campaign Conversion Rate
 
-Purpose: Measures the effectiveness of campaigns in converting leads.
+Purpose: Measures campaign success in converting leads to outcomes.
 
-Logic: Uses CALCULATE to count rows where Outcome = 1, divided by the total marketing touches.
+Logic: CALCULATE(COUNTROWS(CAMPAIGN_TOUCH), CAMPAIGN_TOUCH[outcome] = "1") / [Total Marketing Touches].
 
-4. Customer Support Analysis
-Focuses on service quality using data from the SUPPORT_TICKET table.
+5. Customer Support & External Context
+Avg Satisfaction Score (CSAT): Average rating from the support team.
 
-Avg Satisfaction Score (CSAT)
+Pending Tickets Count: Tracks unresolved issues where status is not "Resolved".
 
-Purpose: Measures the average customer satisfaction rating.
-
-Pending Tickets Count
-
-Purpose: Tracks unresolved issues (where status is not 'Resolved').
-
-5. Environmental & External Context
-Avg Temperature
-
-Purpose: Calculates the average temperature from the EXTERNAL_FACTOR table to study its correlation with sales trends.
+Avg Temperature: Correlates sales trends with environmental data from the EXTERNAL_FACTOR table.
 
 💡 Developer Notes
-Centralized Storage: All measures are stored in the _Key_Measures calculated table for easy access.
+Centralized Measures: All logic is stored in the _Key_Measures table for professional organization.
 
-Safe Division: The DIVIDE function is used globally to prevent "Division by Zero" errors.
+Global Safe Division: The DIVIDE function is used across all metrics to handle nulls and prevent "Division by Zero" errors.
 
-Data Formatting: Revenue is formatted as Currency, and Conversion Rate as Percentage for immediate use in visualizations.
+Dynamic Formatting: * Currency: Applied to all Revenue/Price metrics.
+
+Percentage: Applied to Growth and Conversion metrics.
+
+Whole Numbers: Applied to Counts and Quantities.
