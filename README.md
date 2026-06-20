@@ -73,6 +73,11 @@ Key metrics implemented:
 - 👥 Customer segment distribution  
 - 🏆 Top products analysis  
 
+#### 🖥️ Dashboard Screenshots
+![Dashboard Page 1](store%20sales%20final%20report_page-0001.jpg)
+![Dashboard Page 2](store%20sales%20final%20report_page-0002.jpg)
+![Dashboard Page 3](store%20sales%20final%20report_page-0003.jpg)
+
 ---
 
 ### 🔹 5. Finalization & Presentation

@@ -37,12 +37,11 @@ import time
 # ─── CONNECTION — edit this ───────────────────────────────────────────────────
 CONNECTION_STRING = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=DESKTOP-72TNQAR;"          # e.g. localhost\\SQLEXPRESS or 192.168.1.10
-    "DATABASE=Store_Sales_DataSetDB;"
-    "Trusted_Connection=yes;"
-         # your password
-    # For Windows Authentication instead, replace UID/PWD with:
-    # "Trusted_Connection=yes;"
+    "SERVER=ABDELRHMANAJA\\TEW_SQLEXPRESS;"
+    "DATABASE=store sales;"
+    "UID=sa;"
+    "PWD=4444;"          # ← replace with your actual sa password
+    "TrustServerCertificate=yes;"
 )
 
 BATCH_SIZE = 5_000          # rows per executemany call
